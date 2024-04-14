@@ -7,7 +7,7 @@ training.py, and in the same folders you will be getting the .pkl and .npy files
 "   
   => npm init -y   
   => npm install   
-"
+"   
 these will be creating json files and node modules in that folder and also install mysql and create the database and table and columns as mentioned in code.   
 Now run the command "node database.js", it will start server to listen to the requests       
 
@@ -17,7 +17,7 @@ Now run the command "node database.js", it will start server to listen to the re
 
 !!!! To run the code with docker       
 
-run the following command   
+run the following command      
 docker-compose up --build   
 
 And open the frontend in the browser using http://localhost:5500/register.html
