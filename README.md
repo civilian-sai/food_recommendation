@@ -3,7 +3,7 @@ To run the code without docker follow the below steps after cloning my repositor
 1.Enter into backend folder and now save a file named recepis.csv from "https://www.kaggle.com/code/tanishqdublish/diet-recommendation-system-preprocessing/input" and then train the model by running 
 training.py, and in the same folders you will be getting the .pkl and .npy files and now rum the recommendation.py, it starts the server to listen the requests.
 
-2.Now open the database folder and run the following commands and make sure you have node installed:
+2.Now open the database folder and run the following commands and make sure you have node installed:   
 "
   => npm init -y
   => npm install
