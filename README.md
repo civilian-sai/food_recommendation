@@ -40,7 +40,7 @@ Here the tables are created and the user details are stored and validated and in
 Here the recommendation is done, that is whole logic works here and returns the dishes according to the trained model.     
 
 ## Flowchart   
-<div align= "center"><img src="Screenshot (86).png" />
+<div align= "center"><img src="Screenshot (86).png" /></div>
 
    
 
