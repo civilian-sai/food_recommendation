@@ -1,20 +1,7 @@
-<h1 align="center">Food Recommendation System</h1>
+<h1 align="center">Food Recommendation System</h1>  
 
-  <h4>A food recommendation web application using content-based approach with Scikit-Learn, FlaskAPI and Node JS.</h4>
-</div>
-# Food recommendation
+## Food recommendation
 
-It recommends the dishes as per some nutritious values entered by the user. The values that the user eneters are:   
-=>veg/non-veg   
-=>calories   
-=>fat   
-=>saturated_fat   
-=>cholesterol   
-=>sodium   
-=>carbohydrate    
-=>fiber   
-=>sugar   
-=>protein
 
 ### How food is recommended ?
 A food recommendation system utilizing a content-based approach plays a pivotal role in encouraging healthier eating habits. This method leverages data on the nutritional profiles and ingredients of various foods to offer personalized suggestions to users. An important strength of this approach is its ability to accommodate individual dietary restrictions and preferences, such as allergies or specific food choices. By delivering tailored recommendations, a content-based food recommendation system empowers users to make informed decisions about their meals, thereby enhancing their overall wellness. Moreover, by introducing a diverse array of nutritious options, it facilitates the exploration of new and beneficial foods, broadening culinary experiences and alleviating monotony in meal choices. This holistic approach to diet optimization can contribute significantly to improved health outcomes over time.
@@ -27,7 +14,17 @@ A content-based recommendation engine is a specialized system designed to sugges
 The recommendation engine has been constructed using the Nearest Neighbors algorithm, a type of unsupervised learning method utilized for performing neighbor searches efficiently. This algorithm serves as a unified interface that can access three distinct nearest neighbors algorithms: BallTree, KDTree, and a brute-force approach based on functions within sklearn.metrics.pairwise. Specifically, for our application, we opted for the brute-force algorithm employing cosine similarity due to its rapid computation, which is well-suited for smaller datasets.   
 KNN's simplicity and intuitive nature make it attractive for certain recommendation system applications, especially when dealing with smaller datasets or when interpretability and transparency are prioritized. However, its performance can be affected by the curse of dimensionality when dealing with high-dimensional data. In such cases, preprocessing techniques like dimensionality reduction may be necessary to enhance its efficiency and effectiveness.
 
-$$cos(theta) = (A * B) / (||A|| * ||B||)$$   
+$$cos(theta) = (A * B) / (||A|| * ||B||)$$    
+
+## Technologies used:   
+Docker   
+Flask API   
+SQLLite   
+Node JS   
+HTML, CSS, JS   
+AJAX model
+Python
+Scikit-Learn
 
 ## Flow of Project   
 ### Frontend:   
@@ -40,8 +37,19 @@ Here the tables are created and the user details are stored and validated and in
 Here the recommendation is done, that is whole logic works here and returns the dishes according to the trained model.     
 
 ## Flowchart   
-<div align= "center"><img src="Screenshot (86).png" /></div>
+<div align= "center"><img src="Screenshot (86).png" /></div>   
 
+## Steps to do before running by using docker or normally   
+```bash
+//enter into backend
+cd backend
+//save the recipes.csv file in this folder by using the below link
+
+//now run training.py to get the .pkl, .npy files which stores the traning instances objects and trained data
+python training,.py
+```
+you can see the following highlighted files will get included into your backend directory   
+<div align= "center"><img src="Screenshot (86).png" /></div>  
    
 
 
