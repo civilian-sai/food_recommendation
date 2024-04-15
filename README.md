@@ -1,4 +1,7 @@
-
+<h1 align="center">Food Recommendation System</h1>
+<div align= "center"><img src="Assets/logo_img1.jpg" />
+  <h4>A diet recommendation web application using content-based approach with Scikit-Learn, FastAPI and Streamlit.</h4>
+</div>
 # Food recommendation
 
 It recommends the dishes as per some nutritious values entered by the user. The values that the user eneters are:   
