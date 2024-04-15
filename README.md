@@ -34,22 +34,28 @@ First the user registers his details in "register.html" file and then he gets lo
 Here the tables are created and the user details are stored and validated and in further it also stores the name of the dishes which the user want to store under his email in a table format   
 
 ### Backend:
-Here the recommendation is done, that is whole logic works here and returns the dishes according to the trained model.     
+Here the recommendation is done, that is whole logic works here and returns the dishes according to the trained model.   
 
-## Flowchart   
+  
+
+## Flowchart    
+### Without Docker
 <div align= "center"><img src="Screenshot (86).png" /></div>   
+
+### With Docker   
+<div align= "center"><img src="Screenshot (86).png" /></div> 
 
 ## Steps to do before running by using docker or normally   
 ```bash
 //enter into backend
 cd backend
-//save the recipes.csv file in this folder by using the below link
+//save the recipes.csv file in this folder by using the below link where I mentioned, how to get that dataset.
 
 //now run training.py to get the .pkl, .npy files which stores the traning instances objects and trained data
 python training,.py
 ```
 you can see the following highlighted files will get included into your backend directory   
-<div align= "center"><img src="Screenshot (86).png" /></div>  
+<div align= "center"><img src="Screenshot (87).png" /></div>  
    
 
 
@@ -70,20 +76,19 @@ Clone the project
   git clone https://github.com/civilian-sai/food_recommendation.git
 ```
 
-To run without docker:
+To run without docker(do some changes in the URL's, while using POST method):
 
 ```bash
   cd backend
-  python training.py
-  pyton recommendation.py
+  pyton recommendation.py //now a backend server gets started at port 5000
 
   cd ..
+
   cd database
-  npm init -y
-  npm install
-  node database.js
+  node database.js //now a database server gets started at port 3000
 
   cd..
+
   cd frontend
   http://localhost:5500/register.html (in browser)
 ```
@@ -91,7 +96,7 @@ To run without docker:
 To run with docker
 
 ```bash
-  docker-compose up --build (after getting all your .pkl, json files)
+  docker-compose up --build 
 
   http://localhost:5500/register.html (in browser)
 ```
