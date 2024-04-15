@@ -43,7 +43,10 @@ Here the recommendation is done, that is whole logic works here and returns the 
 <div align= "center"><img src="Screenshot (86).png" /></div>   
 
 ### With Docker   
-<div align= "center"><img src="Screenshot (86).png" /></div> 
+<div align= "center"><img src="Screenshot (88).png" /></div>    
+
+## Why Docker ?   
+By using Docker, you can ensure that the environment in which the application is exactly the same as the environment in which it was built, which can help prevent unexpected issues and improve model performance. It mainly prevents the situattions lie "it works in your system, but doesn't work in my system". Additionally, Docker allows for easy scaling and management of the deployment, making it a great choice for larger machine learning projects.
 
 ## Steps to do before running by using docker or normally   
 ```bash
