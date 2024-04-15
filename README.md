@@ -37,7 +37,10 @@ First the user registers his details in "register.html" file and then he gets lo
 Here the tables are created and the user details are stored and validated and in further it also stores the name of the dishes which the user want to store under his email in a table format   
 
 ### Backend:
-Here the recommendation is done, that is whole logic works here and returns the dishes according to the trained model.   
+Here the recommendation is done, that is whole logic works here and returns the dishes according to the trained model.     
+
+## Flowchart   
+<div align= "center"><img src="screenshoy.png" />
 
    
 
