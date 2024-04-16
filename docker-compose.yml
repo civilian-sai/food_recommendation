@@ -1,34 +1,63 @@
-version: '3'
+version: "3"
 services:
   backend:
     build: ./backend
     ports:
-      - "5000:5000" 
-    networks:
-      - food_app-network
-    
-
-  database:
-    build: ./database
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-    networks:
-      - food_app-network
-    environment:
-      MYSQL_ROOT_PASSWORD: ""
-    
+      - "5000:5000"
 
   frontend:
     build: ./frontend
     ports:
       - "5500:80"
     depends_on:
-      - database
+      - backend
+
+  mysqldb:
+    image: mysql:8.0
+    container_name: mysqlcontainer
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+    volumes:
+      - $HOME/database:/var/lib/mysql
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
+    environment:
+      MYSQL_DATABASE: registration_db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+      SERVICE_TAGS: prod
+      SERVICE_NAME: mysqldb
     networks:
-      - food_app-network
+      - internalnet
+
+  nodeapp:
+    container_name: nodeappcontainer
+    build: ./database
+    image: nodeapp:v1
+    volumes:
+      - $HOME/nodeapp:/code
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    environment:
+      DB_HOST: mysqldb
+      DB_PORT: 3306
+      DB_USER: "admin"
+      DB_PASSWORD: "password"
+      DB_NAME: registration_db
+      DB_CONNECTION_LIMIT: 20
+      SERVICE_TAGS: prod
+      SERVICE_NAME: nodeappservice
+      SERVER_PORT: 3000
+    depends_on:
+      - mysqldb
+    networks:
+      - internalnet
 
 networks:
-  food_app-network:
-    external: true
+  internalnet:
+    driver: bridge
