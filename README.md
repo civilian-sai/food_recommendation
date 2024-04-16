@@ -19,11 +19,11 @@ $$cos(theta) = (A * B) / (||A|| * ||B||)$$
 ## Technologies used:   
 Docker   
 Flask API   
-SQLLite   
+MySQL   
 Node JS   
 HTML, CSS, JS   
-AJAX model
-Python
+AJAX model   
+Python   
 Scikit-Learn
 
 ## Flow of Project   
@@ -31,7 +31,10 @@ Scikit-Learn
 First the user registers his details in "register.html" file and then he gets logged in using "login.html" and it validates the user and allow him into main "index.html" file where he enters the details regarding the nutritituous values   
 
 ### Database:   
-Here the tables are created and the user details are stored and validated and in further it also stores the name of the dishes which the user want to store under his email in a table format   
+Here the tables are created and the user details are stored and validated and in further it also stores the name of the dishes which the user want to store under his email in a table format.   
+
+### MySQL:
+In docker-compose file we are pulling an official image of MySQL from the dockerhub, and created a database by configuring it with the help of node js, which is present in backend
 
 ### Backend:
 Here the recommendation is done, that is whole logic works here and returns the dishes according to the trained model.   
