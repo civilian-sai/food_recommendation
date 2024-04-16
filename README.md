@@ -56,6 +56,7 @@ Get the dataset from kaggle and save it in backend folder and the below is the l
 ```bash
   https://www.kaggle.com/code/tanishqdublish/diet-recommendation-system-preprocessing/input
 ```
+Drive link: https://drive.google.com/drive/folders/1y_9G-yE9NlRMDxRsfYg0d-0gQCxEBREC?usp=drive_link
     
 ## Run Locally
 
