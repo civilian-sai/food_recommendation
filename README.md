@@ -49,23 +49,8 @@ Here the recommendation is done, that is whole logic works here and returns the 
 <div align= "center"><img src="Screenshot (88).png" /></div>    
 
 ## Why Docker ?   
-By using Docker, you can ensure that the environment in which the application is exactly the same as the environment in which it was built, which can help prevent unexpected issues and improve model performance. It mainly prevents the situattions lie "it works in your system, but doesn't work in my system". Additionally, Docker allows for easy scaling and management of the deployment, making it a great choice for larger machine learning projects.
+By using Docker, you can ensure that the environment in which the application is exactly the same as the environment in which it was built, which can help prevent unexpected issues and improve model performance. It mainly prevents the situattions lie "it works in your system, but doesn't work in my system". Additionally, Docker allows for easy scaling and management of the deployment, making it a great choice for larger machine learning projects.   
 
-## Steps to do before running by using docker    
-```bash
-//enter into backend
-cd backend
-//save the recipes.csv file in this folder by using the below link where I mentioned, how to get that dataset.
-
-//now run training.py to get the .pkl, .npy files which stores the traning instances objects and trained data
-python training,.py
-```
-you can see the following highlighted files will get included into your backend directory   
-<div align= "center"><img src="Screenshot (87).png" /></div>  
-   
-
-
-   
 ## Dataset
 
 Get the dataset from kaggle and save it in backend folder and the below is the link, enter the link and download recipes.csv
@@ -76,18 +61,36 @@ Get the dataset from kaggle and save it in backend folder and the below is the l
     
 ## Run Locally
 
-Clone the project
+### Clone the project
 
 ```bash
   git clone https://github.com/civilian-sai/food_recommendation.git
 ```
+Open the food_recommendation folder.   
+
+### Steps to do before running by using docker    
+```bash
+//enter into backend
+cd backend
+//save the recipes.csv file in this folder by using the above link or download from the google drive provided.
+
+//now run training.py to get the .pkl, .npy files which stores the traning instances objects and trained data
+python training,.py
+```
+you can see the following highlighted files will get included into your backend directory   
+<div align= "center"><img src="Screenshot (87).png" /></div>  
+   
+
+
+Come to the directory where the docker-compose file is present.
 
 
 To run with docker
 
 ```bash
-  docker-compose up --build 
+  docker-compose up --build
 
-  http://localhost:5500/register.html (in browser)
+  // use below URL in the browser to get started.
+  http://localhost:5500/register.html 
 ```
 
