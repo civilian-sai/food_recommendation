@@ -98,3 +98,21 @@ To run with docker
   // use below URL in the browser to get started.
   http://localhost:5500/register.html 
 ```
+
+## Problems that may arise:   
+
+### 1. Dataset(recipes.csv) not found:   
+
+                                 This error arises because in my git repository, I was not able to upload my dataset because github doesn't allow oversized data. So, I request you guys to kindly download  it from the google drive link or kaggle link which was  provided in this document or in my readme file. And make sure that this dataset is saved in the backend folder.   
+
+			And after downloading it run the training.py in the terminal by using the following command to get some files which are needed for further process:   
+
+//python training.py (this will generates some .pkl and .npy files)   
+
+
+After this you can run docker-compose up in the directory where the docker-compose file is present.   
+
+
+### 2. Registration Failed:     
+
+			This error arises because of the loading mechanism of containers. Because in my project first the MySQL container should be created and then nodejs container should be created, and only then it can make connections with the MySQL database but this happens in reverse, where first node js container is created and then MySQL container. (this happens because in docker the containers are created parallelly and low size containers will get created first). So to rectify this error all you need to do is, in docker desktop app, you need to restart the node js container.   
