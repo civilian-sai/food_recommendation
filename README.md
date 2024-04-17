@@ -79,7 +79,7 @@ cd backend
 //save the recipes.csv file in this folder by using the above link or download from the google drive provided.
 
 ```
-## Just for verification(Optional)
+## The below step is just for verification(Optional)
 
 //now run training.py to get the .pkl, .npy files which stores the traning instances and trained data
 ```
