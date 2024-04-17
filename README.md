@@ -51,7 +51,7 @@ By using Docker, you can ensure that the environment in which the application is
 
 ## Dataset
 
-Get the dataset from kaggle and save it in backend folder and the below is the link, enter the link and download recipes.csv
+Get the dataset(recipes.csv) from kaggle or google drive link and save it in backend folder and the below is the link, enter the link and download recipes.csv
 
 ```bash
   https://www.kaggle.com/code/tanishqdublish/diet-recommendation-system-preprocessing/input
