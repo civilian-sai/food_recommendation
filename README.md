@@ -74,7 +74,7 @@ cd backend
 //save the recipes.csv file in this folder by using the above link or download from the google drive provided.
 
 //now run training.py to get the .pkl, .npy files which stores the traning instances objects and trained data
-python training,.py
+python training.py
 ```
 you can see the following highlighted files will get included into your backend directory   
 <div align= "center"><img src="Screenshot (87).png" /></div>  
