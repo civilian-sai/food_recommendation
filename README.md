@@ -124,6 +124,6 @@ After this you can run docker-compose up in the directory where the docker-compo
 
 ### 2. Registration Failed:     
 
-This error arises because of the loading mechanism of containers. Because in my project first the MySQL container should be created and then nodejs container should be created, and only then it can make connections with the MySQL database but this happens in reverse, where first node js container is created and then MySQL container. (this happens because in docker the containers are created parallelly and low size containers will get created first). So to rectify this error all you need to do is, in docker desktop app, you need to restart the node js container.    
+This error arises because of the loading mechanism of containers. Because in my project first the MySQL container should be created and then node application container should be created, and only then it can make connections with the MySQL database but this happens in reverse, where first node application container is created and then MySQL container. (this happens because in docker the containers are created parallelly and low size containers will get created first and node application is low in size). So to rectify this error all you need to do is, in docker desktop app, you need to restart the node application container.    
 
    If you face more problems refer to Documentaions.
