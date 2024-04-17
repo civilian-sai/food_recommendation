@@ -5,7 +5,7 @@ from sklearn.neighbors import NearestNeighbors
 import pickle
 
 # Load dataset and preprocess it
-data = pd.read_csv("C:\\Users\\saiya\\OneDrive\\Desktop\\food\\backend\\recipes.csv")
+data = pd.read_csv("recipes.csv")
 columns = ['RecipeId', 'Name', 'RecipeIngredientParts', 'Keywords', 'Calories', 'FatContent', 'SaturatedFatContent',
            'CholesterolContent', 'SodiumContent', 'CarbohydrateContent', 'FiberContent', 'SugarContent', 'ProteinContent']
 dataset = data[columns]
