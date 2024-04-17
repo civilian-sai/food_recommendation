@@ -65,7 +65,11 @@ Drive link: https://drive.google.com/drive/folders/1y_9G-yE9NlRMDxRsfYg0d-0gQCxE
 ```bash
   git clone https://github.com/civilian-sai/food_recommendation.git
 ```
-Open the food_recommendation folder.   
+Open the food_recommendation folder.  
+
+```bash
+cd food_recommendation
+```
 
 ### Steps to do before running by using docker    
 ```bash
@@ -88,8 +92,9 @@ To run with docker
 
 ```bash
   docker-compose up --build
-
+ 
+```
+```bash
   // use below URL in the browser to get started.
   http://localhost:5500/register.html 
 ```
-
