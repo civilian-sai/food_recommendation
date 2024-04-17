@@ -16,5 +16,5 @@ RUN pip install flask-cors
 EXPOSE 5000
 
 ENTRYPOINT ["python"]
-
+RUN python training.py
 CMD ["recommendation.py"]
