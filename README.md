@@ -78,18 +78,24 @@ cd backend
 
 //save the recipes.csv file in this folder by using the above link or download from the google drive provided.
 
-//now run training.py to get the .pkl, .npy files which stores the traning instances objects and trained data
+```
+## Just for verification(Optional)
+
+//now run training.py to get the .pkl, .npy files which stores the traning instances and trained data
+```
 python training.py ( just for verification)
 ```
+
 you can see the following highlighted files will get included into your backend directory   
 <div align= "center"><img src="Screenshot (87).png" /></div>  
    
 
+### Ready to run the project using docker-compose file   
 
 Come to the directory where the docker-compose file is present.
 
 
-To run with docker
+Enter below command
 
 ```bash
   docker-compose up --build
@@ -104,9 +110,11 @@ To run with docker
 
 ### 1. Dataset(recipes.csv) not found:   
 
-This error arises because in my git repository, I was not able to upload my dataset because github doesn't allow oversized data. So, I request you guys to kindly download  it from the google drive link or kaggle link which was  provided in this document or in my readme file. And make sure that this dataset is saved in the backend folder.   
+This error arises because in my git repository, I was not able to upload my dataset because github doesn't allow oversized data. So, I request you guys to kindly download  it from the google drive link or kaggle link which was  provided in this document or in my readme file. And make sure that this dataset is saved in the backend folder.  
 
-And after downloading it run the training.py in the terminal by using the following command to get some files which are needed for further process:   
+   To verify do the following thing, it's just optional.
+
+And after downloading it, run the training.py in the terminal by using the following command to get some files which are needed for further process:   
  ```bash
 //python training.py (this will generates some .pkl and .npy files)   
 ```
